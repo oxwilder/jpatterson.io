@@ -1,9 +1,9 @@
-
-
-<!DOCTYPE html>
-
+<?
+include 'includes/apptop.php';
+?>
 <html lang="en">
-
+<!--<![endif]-->
+<!-- HEAD SECTION -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -12,7 +12,7 @@
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>John Patterson | Full Stack Developer</title>
+    <title>Bootstrap Personal Portfolio Template For Free by Binary Theme</title>
     <!--GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!--BOOTSTRAP MAIN STYLES -->
@@ -38,13 +38,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">John Patterson</a>
+                <a class="navbar-brand" href="#">JHON DEO ALEX</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#header-section">HOME</a></li>
                     <li><a href="#about-section">ABOUT</a></li>
-                    <li><a href="#products-section">MY WORK</a></li>
+                    <li><a href="#products-section">MY-WORK</a></li>
                     <li><a href="#contact-section">HIRE ME</a></li>
                     <li><a href="#contact-section">CONTACT</a></li>
                 </ul>
@@ -58,11 +58,11 @@
         <div class="container">
             <div class="row centered">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1><strong>John Patterson</strong>          
+                    <h1><strong> Jhon Deo Alex</strong>          
                      
                     </h1>
                      <br /> <br /> <br />
-                    <h2> Full Stack Developer</h2>
+                    <h2> Web / Graphics Designer</h2>
                      <br />
                   <a href="#about-section">  <i class="fa fa-angle-double-down fa-5x down-icon"></i> </a>
                 </div>
@@ -95,7 +95,11 @@
 
                     </p>
                     <p>
+                       <a href="#"><i class="fa fa-facebook-square fa-2x color-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square fa-2x color-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-square fa-2x color-google-plus"></i></a>
                         <a href="#"><i class="fa fa-linkedin-square fa-2x color-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-square fa-2x color-pinterest"></i></a>
 
                     </p>
 
@@ -225,8 +229,9 @@
                         <p>
                         103, Rola Street,<br />
                             Demo Lane Road,<br />
-                            Atlanta, GA<br />                          
-                        
+                            New York, USA.<br />                          
+                        Call: +23-00-89-009<br />
+                        Email: demo@yourdomain.com<br />
                             </p>
                        
                     </div>
@@ -281,7 +286,7 @@
     <div id="footer">
         <div class="container">
             <div class="row ">
-                &copy; 2022 www.jpatterson.io | All Right Reserved 				
+                &copy; 2014 www.yourdomain.com | All Right Reserved 				
 		
             </div>
             
