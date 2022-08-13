@@ -47,12 +47,12 @@ COPY Conf/php-fpm/php.ini /etc/php7/conf.d/custom.ini
 COPY Conf/supervisor/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Setup document root
-RUN mkdir -p /var/www/html
+RUN mkdir -p /public_html/
 # Folder for socket
 RUN mkdir /sock
 
 # Make sure files/folders needed by the processes are accessable when they run under the nobody user
-RUN chown -R nobody.nobody /var/www/html && \
+RUN chown -R nobody.nobody /public_html/ && \
     chown -R nobody.nobody /run && \
     chown -R nobody.nobody /sock && \
     chown -R nobody.nobody /var/lib/nginx && \
@@ -61,8 +61,8 @@ RUN chown -R nobody.nobody /var/www/html && \
 USER nobody
 
 # Add application
-WORKDIR /var/www/html
-COPY --chown=nobody src/ /var/www/html/
+WORKDIR /public_html
+COPY --chown=nobody . /public_html/
 
 # Expose the port nginx is reachable on
 EXPOSE 8080

@@ -1,3 +1,8 @@
+ErrorDocument 400 /public_html/error.php
+ErrorDocument 401 /public_html/error.php
+ErrorDocument 403 /public_html/error.php
+ErrorDocument 404 /public_html/error.php
+ErrorDocument 500 /public_html/error.php
 <IfModule mod_autoindex.c>
     Options -Indexes
 </IfModule>
@@ -5,8 +10,3 @@
   Header unset X-Powered-By
   Header always unset X-Powered-By
 </IfModule>
-ErrorDocument 400 /error.php
-ErrorDocument 401 /error.php
-ErrorDocument 403 /error.php
-ErrorDocument 404 /error.php
-ErrorDocument 500 /error.php
