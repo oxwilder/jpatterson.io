@@ -1,5 +1,6 @@
 <?
-include 'includes/apptop.php';
+require 'includes/apptop.php';
+require 'broken';
 ?>
 <html lang="en">
 <!--<![endif]-->
@@ -12,7 +13,7 @@ include 'includes/apptop.php';
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>Bootstrap Personal Portfolio Template For Free by Binary Theme</title>
+    <title><?= MYNAME.' | '.POSITION;?></title>
     <!--GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!--BOOTSTRAP MAIN STYLES -->
@@ -38,13 +39,13 @@ include 'includes/apptop.php';
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">JHON DEO ALEX</a>
+                <a class="navbar-brand" href="#"><?= MYNAME; ?></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#header-section">HOME</a></li>
                     <li><a href="#about-section">ABOUT</a></li>
-                    <li><a href="#products-section">MY-WORK</a></li>
+                    <li><a href="#products-section">MY WORK</a></li>
                     <li><a href="#contact-section">HIRE ME</a></li>
                     <li><a href="#contact-section">CONTACT</a></li>
                 </ul>
@@ -58,11 +59,11 @@ include 'includes/apptop.php';
         <div class="container">
             <div class="row centered">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1><strong> Jhon Deo Alex</strong>          
+                    <h1><strong> <?= MYNAME; ?></strong>          
                      
                     </h1>
                      <br /> <br /> <br />
-                    <h2> Web / Graphics Designer</h2>
+                    <h2> <?= POSITION?></h2>
                      <br />
                   <a href="#about-section">  <i class="fa fa-angle-double-down fa-5x down-icon"></i> </a>
                 </div>
@@ -88,7 +89,7 @@ include 'includes/apptop.php';
             <div class="row main-low-margin text-center">
                 <div class="col-md-3 " data-scrollreveal="enter left and move 100px, wait 0.4s">
                     <img class="img-circle" src="assets/img/team/team1.png" alt="">
-                    <h4><strong>Jhon Deo Alex</strong> </h4>
+                    <h4><strong><?= MYNAME; ?></strong> </h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                          Curabitur nec nisl odio. 
@@ -227,11 +228,8 @@ include 'includes/apptop.php';
                         <h3> My Work Location</h3>
                         <hr />
                         <p>
-                        103, Rola Street,<br />
-                            Demo Lane Road,<br />
-                            New York, USA.<br />                          
-                        Call: +23-00-89-009<br />
-                        Email: demo@yourdomain.com<br />
+                        Atlanta, GA<br />                          
+                        Email: <?= EMAIL ?><br />
                             </p>
                        
                     </div>
