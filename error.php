@@ -119,7 +119,7 @@ if ($title == false || strlen($status) != 3) {
                 default:
                     mc.innerHTML = `<img src="img/onstrike.jpg">`
                     msgHd.innerHTML = `<h2>The electrons are on strike</h2>`
-                    msgMain.innerHTML = `<p class="flipH">But we got some antielectrons to fill in</P>`
+                    msgMain.innerHTML = `<p class="flipH">But we got some anti-electrons to fill in</P>`
 
             }
             let timeslot = document.querySelector("#time")

@@ -1,0 +1,7 @@
+{
+    "require": {
+        "google/cloud-datastore": "1.11.*",
+        "sendgrid/sendgrid": "7.8.*",
+        "algolia/algoliasearch-client-php": "3.0.*"
+    }
+}

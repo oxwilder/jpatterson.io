@@ -35,8 +35,6 @@ COPY Conf/composer/composer.json /composer.json
 # Run composer install to install the dependencies (PHP Cloud Storage SDK)
 RUN composer install --optimize-autoloader --no-interaction --no-progress
 
-# Allow cloudsql to be executable by supervisor
-RUN chmod +x /run/cloud_sql_proxy    
 
 # Configure nginx
 COPY Conf/nginx/nginx.conf /etc/nginx/nginx.conf
@@ -58,9 +56,7 @@ RUN chown -R nobody.nobody /var/www/html && \
     chown -R nobody.nobody /run && \
     chown -R nobody.nobody /sock && \
     chown -R nobody.nobody /var/lib/nginx && \
-    chown -R nobody.nobody /var/log/nginx && \
-    chown -R nobody.nobody /var/log/newrelic/
-
+    chown -R nobody.nobody /var/log/nginx
 # Switch to use a non-root user from here on
 USER nobody
 

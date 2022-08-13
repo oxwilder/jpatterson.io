@@ -1,0 +1,7 @@
+User-agent: Goodzer
+Disallow: /
+User-Agent: *
+Disallow: 
+Disallow: /search*
+Disallow: /advanced_search_result*
+Allow: /
