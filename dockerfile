@@ -61,8 +61,8 @@ RUN chown -R nobody.nobody /var/www/html && \
 USER nobody
 
 # Add application
-WORKDIR /var/www/html
-COPY --chown=nobody src/ /var/www/html/
+WORKDIR /public_html
+COPY --chown=nobody . /var/www/html
 
 # Expose the port nginx is reachable on
 EXPOSE 8080

@@ -10,6 +10,8 @@ $config = [
     'MYNAME'=>'John Patterson',
     'POSITION'=>'Full Stack Developer',
     'EMAIL'=>'john@jpatterson.io',
+    'LINKEDIN'=>'https://www.linkedin.com/in/jnhpatterson/',
+    'RESUMELINK'=>'',
 ];
 
 foreach($config as $const=>$val){

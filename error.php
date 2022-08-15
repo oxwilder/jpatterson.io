@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Server Maintenance</title>
+    <title>Making omelettes</title>
     <style>
         #mainContent {
             display: flex;
