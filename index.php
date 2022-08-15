@@ -293,7 +293,7 @@ require 'includes/apptop.php';
 	<div id="footer">
 		<div class="container">
 			<div class="row ">
-				&copy; 2022 jpatterson.io | All Right Reserved
+				&copy; 2022 jpatterson.io | All Rights Reserved
 
 			</div>
 
