@@ -49,11 +49,33 @@ require 'includes/apptop.php';
 		#email-img {
 			height: 2em;
 		}
+		.modal-link {
+			cursor: pointer;
+		}
+		.modal-xl {
+			width: 1200px;
+		}
 	</style>
 </head>
 <!--END HEAD SECTION -->
 
 <body>
+	<!-- MODAL SECTION -->
+	<div class="modal fade" id="googleMapsModal" tabindex="-1" role="dialog" aria-labelledby="GoogleMapsDemo" aria-hidden="true">
+		<div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Address Verficiation Demo</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img src="img/addressVerificationGoogleMaps.gif" width="1140px">
+				</div>	
+			</div>
+		</div>
+	</div>
 	<!-- NAV SECTION -->
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
@@ -143,7 +165,7 @@ require 'includes/apptop.php';
 		<BR><BR>
 	<? 
 		$bullets = ['Create and document Google Cloud Functions in Python, frontend and backend solutions in PHP and JavaScript (HTML5 and CSS3), and design and manage data structures, functions, and stored procedures in MySQL.', 
-		'Integrate Google Maps API for address verification in order to reduce lost or returned shipments. ',
+		'Integrate <a data-toggle="modal" data-target="#googleMapsModal" class="modal-link">Google Maps API for address verification</a> in order to reduce lost or returned shipments. ',
 		'Integrate EasyPost API and store JSON objects to facilitate shipping label creation, label refunds, and international shipping. Created executable installer to help new developers set up Node and Grunt.JS.',
 		'Create dynamic XML file for Google Merchant Center product reviews.'
 		];
@@ -175,8 +197,14 @@ require 'includes/apptop.php';
 	<div class="container education">
 
 	</div>
+	<div class="container refs">
+		<div class="row main-top-margin text-center" data-scrollreveal="enter top and move 100px, wait 0.3s">
+			Professional references available on request
+		</div>
 
-	<!--WORK/PRODUCTS SECTION -->
+	</div>
+
+	<!--WORK/PROJECTS SECTION -->
 	<div id="products-section">
 		<div class="container">
 			<div class="row main-top-margin text-center" data-scrollreveal="enter top and move 100px, wait 0.3s">
