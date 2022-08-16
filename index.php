@@ -31,7 +31,9 @@ require 'includes/apptop.php';
 		.img-circle {
 			height: 35%;
 		}
-
+		.cameo {
+			line-height: 20px;;
+		}
 		.bump {
 			position: relative;
 			left: -54%;
@@ -54,6 +56,10 @@ require 'includes/apptop.php';
 		}
 		.modal-xl {
 			width: 1200px;
+		}
+		#jotto-img {
+			opacity: 0.75;
+			width: 180%;
 		}
 	</style>
 </head>
@@ -135,11 +141,10 @@ require 'includes/apptop.php';
 			<!-- ./ Main Heading-->
 			<div class="row main-low-margin text-center">
 				<div class="col-md-3 " data-scrollreveal="enter left and move 100px, wait 0.4s">
-					<img class="img-circle" src="/img/jpatterson-circ.png" alt="">
+					<img class="img-circle" src="/img/not-a-selfie.png" alt="Making sure my camera and mirror still work">
 					<h4><strong><?= MYNAME; ?></strong> </h4>
-					<p>
-						Love to put on a sweater and sit in front of a camera
-
+					<p class="cameo">
+						No YOUR bathroom mirror needs cleaning
 					</p>
 					<p>
 						<a href="<?= LINKEDIN ?>"><i class="fa fa-linkedin-square fa-2x color-linkedin"></i></a>
@@ -162,11 +167,18 @@ require 'includes/apptop.php';
 	<!-- END ABOUT SECTION -->
 	<!-- Experience -->
 	<div id="resume" class="container experience">
-		<BR><BR>
+		<div class="row">
+			<div class="col-md-7 col-sm-7 col-md-offset-5 col-lg-offset-4  text-justify" data-scrollreveal="enter right and move 100px, wait 0.4s">
+				<h3>Key Experience</h3>
+			</div>
+		</div>
+		
+		<BR>
 	<? 
 		$bullets = ['Create and document Google Cloud Functions in Python, frontend and backend solutions in PHP and JavaScript (HTML5 and CSS3), and design and manage data structures, functions, and stored procedures in MySQL.', 
 		'Integrate <a data-toggle="modal" data-target="#googleMapsModal" class="modal-link">Google Maps API for address verification</a> in order to reduce lost or returned shipments. ',
-		'Integrate EasyPost API and store JSON objects to facilitate shipping label creation, label refunds, and international shipping. Created executable installer to help new developers set up Node and Grunt.JS.',
+		'Integrate EasyPost API and store JSON objects to facilitate shipping label creation, label refunds, and international shipping.', 
+		'Created executable installer to help new hires set up workstation dependencies like Node and Grunt.JS.',
 		'Create dynamic XML file for Google Merchant Center product reviews.'
 		];
 		echo experience('Z1 Motorsports',POSITION,'AUG 2021','AUG 2022',$bullets);
@@ -199,7 +211,7 @@ require 'includes/apptop.php';
 	</div>
 	<div class="container refs">
 		<div class="row main-top-margin text-center" data-scrollreveal="enter top and move 100px, wait 0.3s">
-			Professional references available on request
+			<h3>Professional references available on request</h3>
 		</div>
 
 	</div>
@@ -224,7 +236,7 @@ require 'includes/apptop.php';
 					</div>
 					<div class="col-md-6 " data-scrollreveal="enter right and move 100px, wait 0.4s">
 						<h4>
-							<strong class="color-red">Can Bus hacking</strong>
+							<strong class="color-red">Can-Bus hacking</strong>
 						</h4>
 						<p>
 							I recently replaced the head unit in my 2016 Tundra with a post-facelift (read: fancier) model year stereo, and in my research found that in order for this to work I'd need to replace the factory amp with a later model. To avoid the cost, I looked into the reason the amp swap was necessary and found that they operate on different commands in the can bus.
@@ -233,6 +245,29 @@ require 'includes/apptop.php';
 							Each node in the can bus network has a built-in database of little packets that contain commands, and for two units to communicate they must have the same db. It's possible with a Raspberry Pi or Arduino equipped with the right serial interface and some specialized software to sniff out and intercept these commands, and rebroadcast different ones. It's like Google Translate for your car's components. It's not just useful for upgrading components, you might also decide to display custom information on your instrument cluster or change how fast your turn signal flashes or any number of customization.
 						</p>
 
+					</div>
+				</div>
+
+			</div>
+			<!-- ./ Row Content-->
+			<hr />
+			<div class="row main-low-margin">
+				<div class="col-md-10  col-md-offset-1 ">
+					
+					<div class="col-md-6 " data-scrollreveal="enter left and move 100px, wait 0.4s">
+						<h4>
+							<strong class="color-red">Jotto!</strong>
+						</h4>
+						<p>
+							I've long wanted to develop an Android app in Kotlin, and I had an idea for a game that I thought would be a perfect yet simple time waster. This will sound very familiar and hopefully not too unbelievable, but in my game you attempt to guess a five-letter word by guessing other five-letter words. I started working on a dictionary so I could get development underway, and about a week into it someone said to me "Hey, have you played that game Wordle?"
+						</p>
+						<p>
+							Admittedly, my game is functionally different -- when guessing a word, the app only reveals how many letters the guess has in common with the target word. There's no indication of placement or which letter it is, you just have to use logic and the process of elimination (if you're a beginner) to arrive at a conclusion. I didn't even make the game up, it's been a pen and paper game for decades just as Dictionary was before someone made it into Balderdash, Fictionary, The Dictionary Game, and so on. I'm sure I'll take the project back up once it doesn't seem like I'm hopping on a "guess-the-five-letter-word" game bandwagon, or once I have a different semi-original app idea. 
+						</p>
+
+					</div>
+					<div class="col-md-4 col-sm-4" data-scrollreveal="enter right and move 100px, wait 0.8s">
+						<img id="jotto-img" class="fade" src="/img/kotlin.png" alt="">
 					</div>
 				</div>
 
