@@ -1,4 +1,5 @@
 <?
+$logVisitors = 1;
 require 'includes/apptop.php';
 ?>
 <html lang="en">
