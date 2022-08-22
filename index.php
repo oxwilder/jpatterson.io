@@ -180,7 +180,11 @@ require 'includes/apptop.php';
 		'Integrate <a data-toggle="modal" data-target="#googleMapsModal" class="modal-link">Google Maps API for address verification</a> in order to reduce lost or returned shipments. ',
 		'Integrate EasyPost API and store JSON objects to facilitate shipping label creation, label refunds, and international shipping.', 
 		'Created executable installer to help new hires set up workstation dependencies like Node and Grunt.JS.',
-		'Create dynamic XML file for Google Merchant Center product reviews.'
+		'Create dynamic XML file for Google Merchant Center product reviews.',
+		'Oversaw transitional period following departure of senior developer, including mentoring more junior developers and transitioning from waterfall to Agile Scrum.',
+		'Deployed regular code updates in Google Cloud Platform managed instance groups.',
+		'Performed integration testing on legacy PHP codebase.',
+		''
 		];
 		echo experience('Z1 Motorsports',POSITION,'AUG 2021','AUG 2022',$bullets);
 		unset($bullets);
@@ -243,7 +247,7 @@ require 'includes/apptop.php';
 							I recently replaced the head unit in my 2016 Tundra with a post-facelift (read: fancier) model year stereo, and in my research found that in order for this to work I'd need to replace the factory amp with a later model. To avoid the cost, I looked into the reason the amp swap was necessary and found that they operate on different commands in the can bus.
 						</p>
 						<p>
-							Each node in the can bus network has a built-in database of little packets that contain commands, and for two units to communicate they must have the same db. It's possible with a Raspberry Pi or Arduino equipped with the right serial interface and some specialized software to sniff out and intercept these commands, and rebroadcast different ones. It's like Google Translate for your car's components. It's not just useful for upgrading components, you might also decide to display custom information on your instrument cluster or change how fast your turn signal flashes or any number of customization.
+							Each node in the CAN bus network has a built-in database of little packets that contain commands, and for two units to communicate they must have the same db. It's possible with a Raspberry Pi or Arduino equipped with the right serial interface and some specialized software to sniff out and intercept these commands, and rebroadcast different ones. It's like Google Translate for your car's components. It's not just useful for upgrading components, you might also decide to display custom information on your instrument cluster or change how fast your turn signal flashes or any number of customization.
 						</p>
 
 					</div>
